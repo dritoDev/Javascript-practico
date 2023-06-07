@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Porcentajes y Descuentos | Curso Practico javascript</title>
+
+  <style>
+    :root {
+
+      --white: #FFFFFF;
+      --black: #000000;
+      --very-light-pink: #C7C7C7;
+      --text-input-field: #F7F7F7;
+      --hospital-green: #ACD9B2;
+      --sm: 14px;
+      --md: 16px;
+      --lg: 18px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+
+    }
+
+    header h1 {
+
+      font-weight: bold;
+      font-size: var(--md)
+    }
+
+    .container {
+      width: 100%;
+      height: 10vh;
+      display: grid;
+      place-items: center;
+      margin: 12px;
+    }
+
+    .form-container {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      width: 300px;
+      height: 12px;
+      margin: 12px;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .input {
+      background-color: var(--text-input-field);
+      border: none;
+      border-radius: 8px;
+      height: 30px;
+      font-size: var(--md);
+      padding: 6px;
+      margin-bottom: 12px;
+      width: 96%;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .label {
+      font-size: var(--sm);
+      font-weight: bold;
+      margin-bottom: 4px;
+      display: grid;
+    }
+
+    .button-submit {
+      background: var(--hospital-green);
+      border-radius: 8px;
+      border: none;
+      color: var(--white);
+      width: 100%;
+      cursor: pointer;
+      font-size: var(--md);
+      font-weight: bold;
+      height: 50px;
+      margin: top;
+    }
+
+    .nav-bar {
+      display: grid;
+      place-items: center;
+    }
+
+    .nav-bar h1 {
+      margin-top: 50px;
+    }
+
+    @media (max-width: 640px) {
+      .nav-bar {
+        display: grid;
+        padding: 6px;
+        justify-content: center;
+        place-items: center;
+        border: none;
+        background: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav-bar">
+    <h1>Porcentajes y Descuentos</h1>
+  </nav>
+  <div class="container">
+    <div class="form-container">
+
+      <section class="section">
+        <div class="sub-title">
+          <h2>calculate price a pagar de tus productos</h2>
+        </div>
+
+        <div class="target">
+          <form class="card">
+            <label class="label" for="InputPrice">Escribe el precio de tu producto</label>
+            <input class="input" id="InputPrice" type="number" placeholder="$" />
+
+            <label class="label" for="InputCupon">Escribe el cupon de descuento de tu producto</label>
+            <input class="input" id="InputCupon" type="number" placeholder=" %" />
+
+            <div class="button-container">
+              <p id="_price"></p>
+              <button class="button-submit" type="button" onclick="onClickButtonPreceDiscount()">Calcular</button>
+
+              <script src="./descuentos.js"></script>
+            </div>
+
+          </form>
+        </div>
+    </div>
+  </div>
+  </section>
+
+</body>
+
+</html>

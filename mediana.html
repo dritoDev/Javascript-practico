@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mediana</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      width: 100%;
+      height: 50vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .div-container {
+      display: grid;
+      grid-template-rows: 1fr auto auto;
+      
+    }
+
+    .input {
+      border-radius: 4px;
+      height: 18px;
+      background: rgb(236, 236, 236);
+      border: none;
+    }
+    .button{
+      border: none;
+
+    }
+  
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="div-container">
+      <h1 class="title">
+        Calculo Mediana
+      </h1>
+      <p>Escribe la mediana para Calcular</p>
+      <form action="/">
+        <label class="label" for="">Mediana</label>
+        <input type="text" class="input" placeholder="insert">
+        <input type="submit" value="calcular" class="button" onClick="calcularMediaAritmetica()">
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
